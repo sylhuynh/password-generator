@@ -27,4 +27,27 @@ function writePassword() {
   // passwordText.value = password;
   // var password = generatePassword();
 
+ // IF passwordLength is greater than 7 and less than 129
+  //   assign each of the following results to variables
+  //   let useNums = confirm user want to use numbers
+  //   let useLcase = confirm user wants lowercase characters
+  //   let useUcase = confirm user wants uppercase
+  //   let useSpecial = confirm user wants special chars
+  
+  if (passwordLength > 7 && passwordLength < 129) {
+    var useLcase = confirm("Do you want to include lower case characters?");
+    var useUcase = confirm("Do you want to include upper case characters?");
+    var useNums = confirm("Do you want to include numbers?");
+    var useSpecial = confirm("Do you want to include special characters?");
+    
+  //   // IF (useNums = true) OR (useLCase = true) OR (useUcase = true) OR (useSpecial = true)
+  //   if (useLcase === true || useUcase === true || useNums === true || useSpecial === true) {
+  //     // call generate password
+  //     // display the password
+  //     generatePassword();
+  // }
+    }
+  else {
+    alert("Password length must be at least 8 to 128 characters long");
+  }
 };
